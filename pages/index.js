@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Scene, Entity } from "aframe-react";
-import { useState, useEffect } from "react";
 import { useScript } from "../useScript";
 
 export default function Home() {
@@ -17,9 +16,9 @@ export default function Home() {
         {status === "ready" && (
           <Scene>
             <a-assets>
-              <a-asset-item id="fastfive" src="/fastfive.gltf" />
+              <a-asset-item id="fafi" src="/fafi.gltf" />
             </a-assets>
-            <Entity gltf-model="#fastfive" />
+            <Entity gltf-model="#fafi" />
           </Scene>
         )}
       </div>
